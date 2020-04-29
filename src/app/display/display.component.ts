@@ -7,9 +7,10 @@ import {Router, ActivatedRoute} from '@angular/router';
   styleUrls: ['./display.component.css']
 })
 export class DisplayComponent implements OnInit {
-
+  value=0;
 constructor(private route: ActivatedRoute) { }
   ngOnInit() {
+    this.value= +this.route.snapshot.paramMap.get('value');
   }
 
 }

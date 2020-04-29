@@ -47,4 +47,9 @@ export class InputComponent implements OnInit {
   kali(){
     this.value = this.value.concat("*");
   }
+  samadengan(){
+    var angka = +this.value;
+    console.log(angka);
+    this.value = angka.toString();
+  }
 }
